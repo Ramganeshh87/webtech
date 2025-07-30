@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+</head>
+<body>
+  <h2>Simple Calculator</h2>
+  <form id="calcForm" onsubmit="calculate(event)">
+    <input type="number" id="num1" required>
+    <select id="operator">
+      <option value="+">+</option>
+      <option value="-">−</option>
+      <option value="*">×</option>
+      <option value="/">÷</option>
+    </select>
+    <input type="number" id="num2" required>
+    <br>
+    <button type="submit">Calculate</button>
+    <div id="result"></div>
+  </form>
+
+  <script>
+    function calculate(event) {
+      event.preventDefault(); // prevent form from reloading the page
+      const num1 = parseFloat(document.getElementById('num1').value);
+      const num2 = parseFloat(document.getElementById('num2').value);
+      const operator = document.getElementById('operator').value;
+      let result;
+      switch(operator) {
+        case '+':
+          result = num1 + num2;
+          break;
+        case '-':
+          result = num1 - num2;
+          break;
+        case '*':
+          result = num1 * num2;
+          break;
+        case '/':
+          if (num2 === 0) {
+            result = 'Error (division by zero)';
+          } else {
+            result = num1 / num2;
+          }
+          break;
+        default:
+          result = 'Invalid operator';
+      }
+
+      document.getElementById('result').textContent = "Result: " + result;
+    }
+  </script>
+
+</body>
+</html>

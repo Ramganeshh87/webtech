@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="C:\Users\CVR\Desktop\6730\30-07-25\css\style1.css"/>
+  <title>Calculator UI</title>
+</head>
+<body>
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+      <button class="btn-clear">C</button>
+      <button>%</button>
+      <button class="btn-operator">/</button>
+      <button class="btn-operator">x</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="btn-operator">-</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button class="btn-operator">+</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button class="btn-equal">=</button>
+      <button>0</button>
+      <button>.</button>
+      <button class="btn-operator">√</button>
+    </div>
+  </div>
+  <script>
+    let display = document.getElementById('display');
+    let currentInput = '0';
+    let operator = '';
+    let previousInput = '';
+    function updateDisplay() {
+      display.textContent = currentInput;
+    }
+    document.querySelectorAll('.buttons button').forEach(button => {
+      button.addEventListener('click', () => {
+        const value = button.textContent;
+
+        if (value === 'C') {
+          currentInput = '0';
+          previousInput = '';
+          operator = '';
+        } else if (value === '=') {
+          if (previousInput !== '' && operator !== '') {
+            currentInput = String(eval(previousInput + operator + currentInput));
+            operator = '';
+            previousInput = '';
+          }
+        } else if ('0123456789'.includes(value)) {
+          currentInput = (currentInput === '0') ? value : currentInput + value;
+        } else if (['+', '-', 'x', '/', '%'].includes(value)) { 
+          if (previousInput === '') {
+            previousInput = currentInput;
+            currentInput = '0';
+          }
+          operator = value === 'x' ? '*' : value === '/' ? '/' : value === '%' ? '%' : value;
+        } else if (value === '√') {
+          currentInput = Math.sqrt(Number(currentInput)).toString();
+        }
+        updateDisplay();
+      });
+    });
+  </script>
+</body>
+</html>

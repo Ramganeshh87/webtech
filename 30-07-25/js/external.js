@@ -1,0 +1,8 @@
+let n1 = 10;
+let n2 = 3.14;
+let b1 = true;
+let st1 = "hello js";
+document.write(`Variable n1: Value = ${n1}, Type = ${typeof n1}<br>`);
+document.write(`Variable n2: Value = ${n2}, Type = ${typeof n2}<br>`);
+document.write(`Variable b1: Value = ${b1}, Type = ${typeof b1}<br>`);
+document.write(`Variable st1: Value = "${st1}", Type = ${typeof st1}<br>`);
