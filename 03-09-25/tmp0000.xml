@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Books xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="book.xsd">
+    <Book>
+        <Title>Power of money</Title>
+        <Author>Paul Sherd</Author>
+        <ISBN>9780333677773</ISBN>
+        <Publisher>Matt Holt Books</Publisher>
+        <Edition>9</Edition>
+        <Price>10.00</Price>
+    </Book>
+    <Book>
+        <Title>Clean Code</Title>
+        <Author>Robert C. Martin</Author>
+        <ISBN>978-0132350884</ISBN>
+        <Publisher>Prentice Hall</Publisher>
+        <Edition>1</Edition>
+        <Price>42.35</Price>
+    </Book>
+</Books>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Books SYSTEM "book.dtd">
+<Books>
+    <Book>
+        <Title>Power of  money</Title>
+        <Author>Paul Sherd</Author>
+        <ISBN>9780333677773</ISBN>
+        <Publisher>Matt Holt Books</Publisher>
+        <Edition>9th edition</Edition>
+        <Price>$10</Price>
+    </Book>
+    <Book>
+        <Title>Clean Code</Title>
+        <Author>Robert C. Martin</Author>
+        <ISBN>978-0132350884</ISBN>
+        <Publisher>Prentice Hall</Publisher>
+        <Edition>1</Edition>
+        <Price>42.35</Price>
+    </Book>
+    <Book>
+        <Title>: Bhagavad‑Gita (Hindi) – English and Hindi Edition</Title>
+        <Author>A. C. Bhaktivedanta Swami Prabhupada</Author>
+        <ISBN>9382176330</ISBN>
+        <Publisher>Bhaktivedanta Book Trustl</Publisher>
+        <Edition>First Edition (January 1, 2012)</Edition>
+        <Price>$22.95</Price>
+    </Book>
+    <Book>
+        <Title>A Random Walk Down Wall Street</Title>
+        <Author>Burton G. Malkiel</Author>
+        <ISBN>978-0393352245</ISBN>
+        <Publisher>W.W. Norton - Company</Publisher>
+        <Edition>12</Edition>
+        <Price>17.95</Price>
+    </Book>
+
+    <Book>
+        <Title>Market Wizards</Title>
+        <Author>Jack D. Schwager</Author>
+        <ISBN>978-1118273050</ISBN>
+        <Publisher>Wiley</Publisher>
+        <Edition>1</Edition>
+        <Price>39.99</Price>
+    </Book>
+
+    <Book>
+        <Title>The Intelligent Investor</Title>
+        <Author>Benjamin Graham</Author>
+        <ISBN>978-0060555665</ISBN>
+        <Publisher>HarperBusiness</Publisher>
+        <Edition>4</Edition>
+        <Price>29.99</Price>
+    </Book>
+
+    <Book>
+        <Title>Trading for a Living</Title>
+        <Author>Dr. Alexander Elder</Author>
+        <ISBN>978-0132557073</ISBN>
+        <Publisher>Prentice Hall</Publisher>
+        <Edition>1</Edition>
+        <Price>45.00</Price>
+    </Book>
+</Books>
